@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "051fdbb8-85a8-49f2-8b18-abe8895ebbfd",
+		"name": "CatFact API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45364526"
+	},
+	"item": [
+		{
+			"name": "https://catfact.ninja/facts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://catfact.ninja/facts",
+					"protocol": "https",
+					"host": [
+						"catfact",
+						"ninja"
+					],
+					"path": [
+						"facts"
+					]
+				},
+				"description": "Facts nos devuelve un dato aleatorio sobre los gatos, en este caso nos devuelve \"Unlike dogs, cats do not have a sweet tooth. Scientists believe this is due to a mutation in a key taste receptor.\""
+			},
+			"response": []
+		},
+		{
+			"name": "https://catfact.ninja/facts?limit=3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://catfact.ninja/facts?limit=3",
+					"protocol": "https",
+					"host": [
+						"catfact",
+						"ninja"
+					],
+					"path": [
+						"facts"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				},
+				"description": "En este caso nos devuelte datos con un limite, el limite son 3 datos"
+			},
+			"response": []
+		},
+		{
+			"name": "https://catfact.ninja/breeds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://catfact.ninja/breeds",
+					"protocol": "https",
+					"host": [
+						"catfact",
+						"ninja"
+					],
+					"path": [
+						"breeds"
+					]
+				},
+				"description": "Este request nos devuelve las razas existentes de gatoss."
+			},
+			"response": []
+		},
+		{
+			"name": "https://catfact.ninja/breeds?limit=5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://catfact.ninja/breeds?limit=5",
+					"protocol": "https",
+					"host": [
+						"catfact",
+						"ninja"
+					],
+					"path": [
+						"breeds"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				},
+				"description": "En este ultimo caso nos devuelve 5 razas de gatos, porque este request tiene un limite de 5 datos"
+			},
+			"response": []
+		}
+	]
+}
